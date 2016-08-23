@@ -43,4 +43,5 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello World, my name is ${::hostname}": }
+  include examples::fundamentals
 }
