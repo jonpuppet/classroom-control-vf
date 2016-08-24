@@ -46,7 +46,7 @@ node default {
   include examples::fundamentals
   
   exec {"cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-  path    => ['/usr/bin', '/usr/sbin',],
+  path    => '/usr/local/bin',
   creates => '/etc/motd',
   }
   
