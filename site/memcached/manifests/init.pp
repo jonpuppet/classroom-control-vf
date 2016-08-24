@@ -2,7 +2,7 @@ class memcached {
 
 package {'memcached':
   ensure => present,
-  before => File['memcached'},
+  before => File['memcached'],
   }
 
 service {'memcached':
