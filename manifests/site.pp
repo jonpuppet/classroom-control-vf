@@ -50,6 +50,6 @@ node default {
   owner =>'root',
   group =>'root',
   mode =>'0644',
-  source => 'This is a sample MOTD by Jon',
+  content => 'This is a sample MOTD by Jon',
   }
 }
