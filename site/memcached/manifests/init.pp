@@ -2,7 +2,7 @@ class memcached {
 
 package {'memcached':
   ensure => present,
-  before => File['memcached'],
+  before => File['/etc/sysconfig/memcached'],
   }
 
 service {'memcached':
