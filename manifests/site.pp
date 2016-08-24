@@ -44,4 +44,12 @@ node default {
   #   class { 'my_class': }
   notify { "Hello World!, my name is ${::hostname}": }
   include examples::fundamentals
+  
+  file {'/etc/motd':
+  ensure => file,
+  owner =>'root',
+  group =>'root',
+  mode =>'0644',
+  source => 'This is a sample MOTD by Jon',
+  }
 }
