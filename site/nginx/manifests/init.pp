@@ -31,7 +31,7 @@ class nginx {
   file {'default.conf':
     ensure => file,
     owner => 'root',
-    group => 'root'
+    group => 'root',
     mode => '0644',
     path => '/etc/nginx/conf.d/default.conf',
     source => 'puppet:///modules/nginx/default.conf',
