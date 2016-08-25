@@ -53,7 +53,7 @@ node default {
    
    if $::virtual == 'docker' {
     $vmname = $::virtual
-    notify { "This is a ${vmanme} machine":
+    notify { "This is a ${vmanme} machine":}
     }
   
   #file {'/etc/motd':
