@@ -52,7 +52,7 @@ node default {
    }
    
    if $::virtual == 'docker' {
-    $vmname = $::virtual
+    $vmname = capitalize($::virtual)
     notify { "This is a ${vmanme} machine":}
     }
   
