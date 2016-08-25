@@ -49,7 +49,7 @@ file { "${docroot}/index.html":
 
 file { "${confdir}/nginx.conf":
   ensure => file,
-  content => template('templates/nginx.conf.erb'),
+#  content => template('templates/nginx.conf.erb'),
   notify => Service['nginx'],
 }
 
