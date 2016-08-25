@@ -55,7 +55,7 @@ file { "${confdir}/nginx.conf":
 
 file { "${confdir}/conf.d/default.conf":
   ensure => file,
-  content => template('nginx/default.conf.erb'),
+  #content => template('nginx/default.conf.erb'),
   notify => Service['nginx'],
 }
 
