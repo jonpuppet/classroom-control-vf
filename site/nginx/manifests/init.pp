@@ -24,7 +24,7 @@ class nginx {
     owner => 'root',
     group => 'root',
     mode => '0644',
-    path => /etc/nginx/nginx.conf',
+    path => '/etc/nginx/nginx.conf',
     source => 'puppet:///modules/nginx/nginx.conf',
     }
     
