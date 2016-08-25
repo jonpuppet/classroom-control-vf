@@ -50,6 +50,11 @@ node default {
   path    => '/usr/local/bin',
   creates => '/etc/motd',
    }
+   
+   if $::virtual == 'docker' {
+    $vmname = $::virtual
+    notify { "This is a ${vmanme} machine":
+    }
   
   #file {'/etc/motd':
   #ensure => file,
