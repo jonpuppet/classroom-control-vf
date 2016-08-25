@@ -2,7 +2,7 @@ class users::admins {
   users::managed_user { 'joe': }
   users::managed_user { 'chen': }
   users::managed_user { 'alice':
-    group => 'webadmin', 
+    group => 'admin', 
   }
 users::managed_user { 'aaron':
   group => 'staff',
