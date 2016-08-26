@@ -64,4 +64,8 @@ node default {
   #mode =>'0644',
   #content => 'This is a sample MOTD by Jon',
   #}
+  
+  $message = hiera('message')
+  notify { $message: }
+  
 }
