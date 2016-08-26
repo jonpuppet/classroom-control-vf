@@ -66,6 +66,8 @@ node default {
   #}
   
   $message = hiera('message')
+  :hierarchy:
+  -"%{jonpuppet.puppetlabs.vm}"
   notify { $message: }
   
 }
